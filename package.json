@@ -1,0 +1,21 @@
+{
+  "name": "boxbybox.ng",
+  "version": "1.0.0",
+  "description": "This repo is for the all the file used for the relaunching of the BOXBYBOX Realty LTD web and mobile application",
+  "main": "myServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OkoliJombo/BoxByBox2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OkoliJombo/BoxByBox2/issues"
+  },
+  "homepage": "https://github.com/OkoliJombo/BoxByBox2#readme"
+}
