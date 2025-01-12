@@ -1,16 +1,13 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js HTML upload</title>
 </head>
-
 <body>
-    <h1>Welcome to Box By Box Rentals</h1>
-    <label for = "category"><h2>Filter Rentals</h2></label>
-    <select name = "category" id = "category">
-        <option value = "Location">Location</option>
-        <option value = "Type"> Type</option>
-        <option value = "Price">Price</option>
-    </select>
-    
+    <form action = "/" method = "POST" enctype = "multipart/form-data">
+        <input type = "file" name = "Upload" multiple/>
+        <input type = "submit" value = "Upload File" />
 </body>
 </html>
