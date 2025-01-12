@@ -4,16 +4,17 @@ const app = express()
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/Rentals.html")
 })
-app.post("/", (req, res) => {
-    const form = new formidable.IncomingForm()
-    form.parse(req)
-
+app.post("/upload", (req, res) => {
+    var form = new formidable.IncomingForm()
+    form.parse(req, (err, fields, files) => {
+        res.write("File uploaded")
+        res.end()
+    })
     form.on("fileBegin", (name, file) => {
         file.path = __dirname + "/Uploads/" + file.name
     })
     form.on("file", (name, file) => {
-        console.log("Uploaded" + file.name)
-        res.send("File uploaded successfully")
+        console.log("Uploaded file: " + file.name)
     })
 })
 app.listen(3000, () => {
