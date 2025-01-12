@@ -12,9 +12,8 @@ app.post("/", (req, res) => {
         file.path = __dirname + "/Uploads/" + file.name
     })
     form.on("file", (name, file) => {
-        console.log("Uploaded " + file.name)
+        console.log("Uploaded" + file.name)
         res.send("File uploaded successfully")
-        res.sendFile(__dirname + "/Rentals.html")
     })
 })
 app.listen(3000, () => {
