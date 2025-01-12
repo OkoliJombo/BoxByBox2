@@ -2,7 +2,7 @@ const express = require ("express")
 const formidable = require("formidable")
 const app = express()
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/rentals.html")
+    res.sendFile(__dirname + "/Rentals.html")
 })
 app.post("/", (req, res) => {
     const form = new formidable.IncomingForm()
