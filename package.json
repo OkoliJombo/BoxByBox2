@@ -4,7 +4,7 @@
   "description": "This repo is for the all the file used for the relaunching of the BOXBYBOX Realty LTD web and mobile application",
   "main": "myServer.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon myServer.js"
   },
   "repository": {
     "type": "git",
