@@ -6,10 +6,7 @@ app.get("/", (req, res) => {
 })
 app.post("/", (req, res) => {
     var form = new formidable.IncomingForm()
-    form.parse(req, (err, fields, files) => {
-        res.write("File uploaded")
-        res.end()
-    })
+    form.parse(req)
     form.on("fileBegin", (name, file) => {
         file.path = __dirname + "/Uploads/" + file.name
     })
