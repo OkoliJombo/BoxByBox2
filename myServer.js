@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
     var form = new formidable.IncomingForm()
     form.parse(req)
-    form.on("fileBegin", (name, file) => {
+    form.on("fileBegin", function (name, file) {
         file.path = __dirname + "/Uploads/" + file.name
     })
     form.on("file", (name, file) => {
